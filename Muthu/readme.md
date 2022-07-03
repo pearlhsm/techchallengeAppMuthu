@@ -60,7 +60,7 @@ There is no requirement for Servian to access your cloud environment to deploy t
 
 ## My Git Repo
 
-Git Repo: pearlhsm/techchallengeapp-kubectl-tf-az-devops
+Git Repo: pearlhsm/techchallengeappMuthu
 
 # Details steps (terminology wise)
 
