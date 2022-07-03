@@ -130,7 +130,7 @@ create second pipeline to under Techchallenge project. This is single pipeline (
  - This pipeline download the kubectl deployment file from Azure artifacts into target directory.
  - This deployment pull the docker image from docker registry and deploy it into Kuberbetes clusters and start serving the application.
  
- ![image](https://user-images.githubusercontent.com/88908606/177045491-abc06079-60e5-4777-974b-cc8c25ec197e.png)
+![image](https://user-images.githubusercontent.com/88908606/177047996-ee606076-b87e-4d85-8c8e-676e4b106c78.png)
 
 
 # 6. Launch the servian application after Implementation
@@ -138,6 +138,9 @@ create second pipeline to under Techchallenge project. This is single pipeline (
 
 
 Now take IP address from the output of kubectl get svc loadbalancer and run it in the web browser (Example: http://IPaddress:3000 )
+
+![image](https://user-images.githubusercontent.com/88908606/177048008-20bae0df-90dc-40cb-88e2-64183a53cb86.png)
+
 
 
 
