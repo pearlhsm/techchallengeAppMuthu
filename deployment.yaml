@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: techchallenge
+spec:
+  selector:
+      matchLabels:
+        app: techchallenge
+  replicas: 3
+  template:
+      metadata:
+        labels:
+            app: techchallenge
+      spec:
+        containers:
+        - name: techchallenge
+          image: pearlhsm/techchallenge:v1
+          imagePullPolicy: Always
+          readinessProbe:
+            httpGet:
+              port: 3000
+              path: /
+          livenessProbe:
+            httpGet:
+              port: 3000
+              path: /
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          env:
+          - name: VTT_DBUSER
+            value: techchallengeuser@postgresql-techchallenge-server
+          - name: VTT_DBPASSWORD
+            value: Postgres!23
+          - name: VTT_DBNAME
+            value: app
+          - name: VTT_DBPORT
+            value: "5432"
+          - name: VTT_DBHOST
+            value: postgresql-techchallenge-server.postgres.database.azure.com
+          - name: VTT_LISTENHOST
+            value: "0.0.0.0" 
+          - name: VTT_LISTENPORT
+            value: "3000"   
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: techchallenge-loadbalancer
+spec:
+  type: LoadBalancer
+  selector:
+    app: techchallenge
+  ports:
+  - protocol: TCP
+    port: 3000
+    targetPort: 3000            
+
