@@ -1,6 +1,6 @@
 # Muthu Chelliah Assessment submission
 
-Git Repo: pearlhsm/techchallengeapp-kubectl-tf-az-devops
+Git Repo: pearlhsm/techchallengeappMuthu
 
 # Techchallenge Application Architecture
 
