@@ -36,7 +36,7 @@ ci-cd-provision.yml under root (created) to automate provisioning k8s cluster an
 
 cd-cd-deployment.yml under root (created) to automate deploy kubernetes deployment file into kubernetes cluster.
 
-# Servian Technical Challenge High level steps
+# High level steps
 
 High level Steps to deploy the application into Azure Cloud
 
@@ -133,7 +133,7 @@ create second pipeline to under Techchallenge project. This is single pipeline (
 ![image](https://user-images.githubusercontent.com/88908606/177047996-ee606076-b87e-4d85-8c8e-676e4b106c78.png)
 
 
-# 6. Launch the servian application after Implementation
+# 6. Launch the application after Implementation
 
 
 
