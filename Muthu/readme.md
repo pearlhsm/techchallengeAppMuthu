@@ -1,4 +1,4 @@
-# Muthu Chelliah Assessment submission
+# Modernize Go language application using Containerization
 
 Git Repo: pearlhsm/techchallengeappMuthu
 
